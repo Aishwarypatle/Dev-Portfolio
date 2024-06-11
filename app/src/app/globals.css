@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+.slow-spin{
+  animation: spin 15s linear infinite;
+}
+.blue-box{
+  background-color: #65c3c8;
+}
+.yellow-box{
+  background-color: #eeaf3a;
+}
+.red-box{
+  background-color: #ef9fbc;
 }
