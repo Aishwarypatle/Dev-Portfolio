@@ -1,5 +1,4 @@
-import { reactpng, javascript, typescript, redux, next, css, mui, jquery } from "../assets/Skills/SkillsExport"
-
+import {html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,spring,redis,mysql,postgre,nodejs,api,express,mongodb,s3,vercel,netlify,gcp,aws,vscode,figma,postman,github,git,jira} from "../assets/Skills/SkillsExport"
 
 export const menuItems = [
     {
@@ -28,7 +27,6 @@ export const menuItems = [
         link : "/skills"
     },
 ]
-
 export const techMenu = [
     {
         value : "frontend",
@@ -43,23 +41,10 @@ export const techMenu = [
         label : "Cloud",
     },
     {
-        value : "problemsolving",
-        label : "Problem Solving",
-    },
-    {
-        value : "database",
-        label : "Database",
-    },
-    {
         value : "tools",
-        label : "API/Tools",
-    },
-    {
-        value : "testing",
-        label : "Unit Testing",
-    },
+        label : "Tools",
+    }
 ]
-
 export const frontendImages = [
     {
         label : "React",
@@ -82,8 +67,16 @@ export const frontendImages = [
         src : next
     },
     {
+        label : "React Native",
+        src : native
+    },
+    {
         label : "CSS",
         src : css
+    },
+    {
+        label : "HTMl",
+        src : html
     },
     {
         label : "Material UI",
@@ -96,35 +89,83 @@ export const frontendImages = [
 ]
 export const backendImages = [
     {
-        label : "React",
-        src : reactpng
+        label : "NodeJS",
+        src : nodejs
     },
     {
-        label : "Javascript",
-        src : javascript
+        label : "ExpressJS",
+        src : express
     },
     {
-        label : "Typescript",
-        src : typescript
+        label : "MongoDB",
+        src : mongodb
     },
     {
-        label : "Redux",
-        src : redux
+        label : "MySQL",
+        src : mysql
     },
     {
-        label : "Next",
-        src : next
+        label : "SpringBoot",
+        src : spring
     },
     {
-        label : "CSS",
-        src : css
+        label : "PostgreSQL",
+        src : postgre
     },
     {
-        label : "Material UI",
-        src : mui
+        label : "Redis",
+        src : redis
     },
     {
         label : "Jquery",
         src : jquery
     },
+]
+export const cloudImages = [
+    {
+        label : "AWS",
+        src : aws
+    },
+    {
+        label : "Amazon S3",
+        src : s3
+    },
+    {
+        label : "Google Cloud",
+        src : gcp
+    },
+    {
+        label : "Vercel",
+        src : vercel
+    },
+    {
+        label : "Netlify",
+        src : netlify
+    }
+]
+export const toolsImage = [
+    {
+        label : "Github",
+        src : github
+    },
+    {
+        label : "Git",
+        src : git
+    },
+    {
+        label : "Postman",
+        src : postman
+    },
+    {
+        label : "Jira",
+        src : jira
+    },
+    {
+        label : "Figma",
+        src : figma
+    },
+    {
+        label : "VS Code",
+        src : vscode
+    }
 ]

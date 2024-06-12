@@ -5,10 +5,7 @@ import { techMenu } from '../../constant/constant'
 import Frontend from '../../components/Skills/Frontend'
 import Cloud from '../../components/Skills/Cloud'
 import Backend from '../../components/Skills/Backend'
-import Testing from '../../components/Skills/Testing'
 import Tools from '../../components/Skills/Tools'
-import ProblemSolving from '../../components/Skills/ProblemSolving'
-import Database from '../../components/Skills/Database'
 import "../../app/globals.css";
 
 
@@ -28,7 +25,7 @@ const index = () => {
           sx={{display: "flex",justifyContent:"center"}}
         />
         <CardContent>
-          <Grid container>
+          <Grid container direction={"row"} justifyContent={"center"}>
             <Grid item>
               <Tabs
                 value={tab}
@@ -52,10 +49,7 @@ const index = () => {
                 {tab == "frontend" && (<Frontend />)}
                 {tab == "backend" && (<Backend />)}
                 {(tab == "cloud") && (<Cloud />)}
-                {(tab == "database") && (<Database />)}
-                {(tab == "problemsolving") && (<ProblemSolving />)}
                 {(tab == "tools") && (<Tools />)}
-                {(tab == "testing") && (<Testing />)}
             </Grid>
           </Grid>
         </CardContent>
