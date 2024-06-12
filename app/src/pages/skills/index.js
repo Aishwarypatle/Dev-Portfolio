@@ -9,6 +9,8 @@ import Testing from '../../components/Skills/Testing'
 import Tools from '../../components/Skills/Tools'
 import ProblemSolving from '../../components/Skills/ProblemSolving'
 import Database from '../../components/Skills/Database'
+import "../../app/globals.css";
+
 
 const index = () => {
   const [ tab , setTab ] = useState("frontend")
@@ -17,7 +19,10 @@ const index = () => {
   }
   return (
     <>
-      <Card>
+      <Card 
+        sx={{boxShadow:"none"}}
+        className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
+      >
         <CardHeader 
           title="Tech Stack"
           sx={{display: "flex",justifyContent:"center"}}
@@ -37,8 +42,13 @@ const index = () => {
               </Tabs>
             </Grid>
           </Grid>
-          <Grid container>
-            <Grid item>
+          <Grid 
+            container 
+            direction="row" 
+            justifyContent="center"
+            className='mt-10'
+          >
+            <Grid item >
                 {tab == "frontend" && (<Frontend />)}
                 {tab == "backend" && (<Backend />)}
                 {(tab == "cloud") && (<Cloud />)}

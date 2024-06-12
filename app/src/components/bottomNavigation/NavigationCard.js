@@ -27,7 +27,7 @@ const NavigationCard = () => {
                     label={item?.label} 
                     component={Link}  
                     href={item?.link}
-                    sx={{ backgroundColor : "aliceblue" , borderRadius :"10px"}}
+                    sx={{ backgroundColor : "aliceblue" , borderRadius :"30px" , paddingInline:"10px"}}
                 />
         ))}
         </BottomNavigation>
