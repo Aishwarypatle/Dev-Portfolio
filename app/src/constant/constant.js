@@ -24,7 +24,7 @@ export const menuItems = [
     {
         value : "about",
         label : "About",
-        link : "/skills"
+        link : "/about"
     },
 ]
 export const techMenu = [
