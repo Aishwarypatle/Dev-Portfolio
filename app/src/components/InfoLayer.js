@@ -4,7 +4,7 @@ import mac from '../assets/images/projs.webp'
 import Image from 'next/image'
 const InfoLayer = () => {
   return (
-    <Card className="shadow-none">
+    <Box className="shadow-none">
         <Box className="flex flex-col lg:flex-row justify-center gap-12 mt-20">
             <Box className="flex flex-col gap-2 items-center lg:items-end">
                 <h3 class="text-6xl lg:text-8xl font-black" style={{color:"#65c3c8"}}>Fast</h3>
@@ -21,7 +21,7 @@ const InfoLayer = () => {
                 />
             </Box>
         </Box>
-    </Card>
+    </Box>
   )
 }
 

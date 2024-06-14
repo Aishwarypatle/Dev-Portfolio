@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image';
-import userPic from '../assets/images/userpicccc.png'
+import userPic from '../assets/images/user_2.png'
 
 const ImageCard = () => {
   return (
     <>
         <div class="h-80 w-80 relative">
-          <div class="absolute h-80 w-60 bottom-2 left-4 overflow-hidden z-10">
+          <div class="absolute h-80 w-60 top-10 left-6 overflow-hidden z-10">
             <Image
               src={userPic} 
               alt="Aishwary Patle" 

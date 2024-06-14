@@ -18,7 +18,7 @@ const Skills = () => {
   }
   return (
     <>
-      <Card 
+      <Box 
         sx={{boxShadow:"none"}}
         className='h-full flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
       >
@@ -52,7 +52,7 @@ const Skills = () => {
             </Grid>
           </Grid>
         </CardContent>
-      </Card>
+      </Box>
     </>
   )
 }

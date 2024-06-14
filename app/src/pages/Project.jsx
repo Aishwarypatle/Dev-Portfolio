@@ -10,7 +10,7 @@ import CustomHeader from '../common/CustomHeader';
 const Project = () => {
   return (
     <>
-      <Card className='shadow-none w-full grid place-items-center mt-10' >
+      <Box className='shadow-none w-full grid place-items-center' >
         <CustomHeader text={"PROJECTS"} />
         <CardContent className='w-full grid place-items-center font-normal'>
             <p className='block text-xs '>Things I have built so far</p>
@@ -26,7 +26,7 @@ const Project = () => {
                 </Grid>
               </Box>
         </CardContent>
-      </Card>
+      </Box>
     </>
   )
 }

@@ -1,5 +1,5 @@
 'use client'
-import { Button, Card, Grid} from '@mui/material'
+import { Box, Button, Card, Grid} from '@mui/material'
 import { SocialMenu } from '../../constant/constant'
 import React from 'react'
 
@@ -10,7 +10,7 @@ const Foooter = () => {
   }
   return (
         <>
-          <Card className='bg-black w-screen p-10'>
+          <Box className='bg-slate-900 w-screen p-10'>
             <Grid container direction={"row"} justifyContent={"center"}>
               {
                 SocialMenu?.map((item,index) => (
@@ -21,7 +21,7 @@ const Foooter = () => {
               }
             </Grid>
             <p className='flex justify-center text-white mt-2 font-sans'>Aishwary.dev  ©  2023</p>
-          </Card>
+          </Box>
         </>
   )
 }

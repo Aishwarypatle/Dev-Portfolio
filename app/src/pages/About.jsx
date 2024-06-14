@@ -10,13 +10,13 @@ import CustomHeader from '../common/CustomHeader'
 
 const About = () => {
   return (
-    <Card
+    <Box
       sx={{boxShadow:"none"}}
-      className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
+      className='flex flex-col justify-center items-center w-fit lg:w-full md:w-full'
     >
       <CustomHeader text={"ABOUT"} />
-      <Grid container className='mt-20 ' direction={"row"} justifyContent={"center"} sx={{zIndex:10}}>
-          <Grid item md={4} className='flex justify-center'>
+      <Grid container className='mt-10 md:mt-20' direction={"row"} justifyContent={"center"} sx={{zIndex:10}}>
+          <Grid item md={4} className='flex justify-center' sm={12}>
             <ImageContainer >
               <Image 
                 src={user}
@@ -26,7 +26,7 @@ const About = () => {
               />
             </ImageContainer>
           </Grid>
-          <Grid item md={8}>
+          <Grid item md={8} sm={12}>
             <article className='font-normal text-lime-50 font-mono'>
               Hi, I'm Aishwary Patle, a self-taught passionate Software Engineer from India, currently working at A'alda vet India as a SDE-1. I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces. I also love doing open source development, It gives me a wonderful feeling of achievement and joy which I cannot explain in words. 
               <br /><br />I have a deep understanding of Data structures and algorithms as well as SOLID principles. I am learning System Design as well as how the applications can be made scalable
@@ -57,7 +57,7 @@ const About = () => {
           </Grid>
       </Grid>
       <BackgroundShadow></BackgroundShadow>
-    </Card>
+    </Box>
   )
 }
 const ImageContainer = styled(Box)(() => ({
@@ -66,7 +66,7 @@ const ImageContainer = styled(Box)(() => ({
   overflow:"hidden",
   width : "fit-content"
 }))
-const CardHolder = styled(Box)(() => ({
+const CardHolder = styled(Box)(({theme}) => ({
   display :"flex",
   flexDirection :"column",
   justifyContent :"space-between",
@@ -78,7 +78,7 @@ const CardHolder = styled(Box)(() => ({
   maxWidth :"275px",
   color :"#65c3c8",
 }))
-const BackgroundShadow = styled(Box)(() => ({
+const BackgroundShadow = styled(Box)(({theme}) => ({
   position: "relative",
   left: "0px",
   width: "100%",

@@ -18,7 +18,7 @@ const HomePage = () => {
           <ProfileCard />
           <InfoLayer />
           <Skills />
-          <Experience />
+          {/* <Experience /> */}
           <Project />
           <About />
           <Foooter />

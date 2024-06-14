@@ -7,12 +7,12 @@ import React from 'react'
 const Experience = () => {
   return (
     <>
-        <Card
+        <Box
           sx={{boxShadow:"none"}}
           className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
         >
           <CustomHeader text={"EXPERIENCE"} />
-        </Card>
+        </Box>
     </>
   )
 }
