@@ -21,30 +21,30 @@ const index = () => {
         sx={{boxShadow:"none"}}
         className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
       >
-       <HeaderBox>
-          <p className='font-medium tracking-widest'>TECH STACK</p>
-       </HeaderBox>
-        <CardContent>
-          <Grid container direction={"row"} justifyContent={"center"}>
-            <Grid item>
-              <Tabs
-                value={tab}
-                onChange={handleTabChange}
-              >
-                {
-                  techMenu?.map((item) => (
-                    <Tab value={item?.value} label={item?.label}/>
-                  ))
-                }
-              </Tabs>
-            </Grid>
+      <HeaderBox>
+        <p className='font-medium tracking-widest'>TECH STACK</p>
+      </HeaderBox>
+      <CardContent>
+        <Grid container direction={"row"} justifyContent={"center"}>
+          <Grid item>
+            <Tabs
+              value={tab}
+              onChange={handleTabChange}
+            >
+              {
+                techMenu?.map((item) => (
+                  <Tab value={item?.value} label={item?.label}/>
+                ))
+              }
+            </Tabs>
           </Grid>
-          <Grid 
-            container 
-            direction="row" 
-            justifyContent="center"
-            className='mt-10'
-          >
+        </Grid>
+        <Grid 
+          container 
+          direction="row" 
+          justifyContent="center"
+          className='mt-10'
+        >
             <Grid item >
                 {tab == "frontend" && (<Frontend />)}
                 {tab == "backend" && (<Backend />)}

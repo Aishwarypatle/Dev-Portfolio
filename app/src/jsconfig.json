@@ -1,9 +1,9 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@/constant/*": ["src/constant/*"],
-        "@/component/*": ["src/omponent/*"]
-      }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/constant/*": ["src/constant/*"],
+      "@/component/*": ["src/omponent/*"]
     }
   }
+}

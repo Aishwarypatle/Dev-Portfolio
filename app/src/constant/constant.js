@@ -1,4 +1,4 @@
-import {html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,spring,redis,mysql,postgre,nodejs,api,express,mongodb,s3,vercel,netlify,gcp,aws,vscode,figma,postman,github,git,jira} from "../assets/Skills/SkillsExport"
+import {spotify,crm,notes,ecom,html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,spring,redis,mysql,postgre,nodejs,api,express,mongodb,s3,vercel,netlify,gcp,aws,vscode,figma,postman,github,git,jira} from "../assets/Skills/SkillsExport"
 
 export const menuItems = [
     {
@@ -168,4 +168,42 @@ export const toolsImage = [
         label : "VS Code",
         src : vscode
     }
+]
+export const projectDetails = [
+    {
+        name: "Spotify Clone",
+        link: "/",
+        code: "/",
+        desc: "Create a music streaming app akin to Spotify, featuring user authentication, music browsing, playback controls, playlist management, and user profiles. Aim for a functional prototype to showcase core functionalities.",
+        image: spotify,
+        tech:[ "React Native" ,"Redux" ,"Tailwind CSS", "Spotify API"],
+        color: "#65c3c8"
+    },
+    {
+        name: "E-Commerce Site",
+        link: "/",
+        code: "/",
+        desc: " Develop a basic online shopping app offering user authentication, product browsing, cart management, checkout functionality, and user profiles.",
+        image: ecom,
+        tech: ["React ","Redux" ,"Material UI" ,"Tailwind CSS" ," Axios "],
+        color: "#eeaf3a"
+    },
+    {
+        name: "Sales CRM App",
+        link: "/",
+        code: "/",
+        desc: "Develop a fundamental customer relationship management (CRM) application featuring user authentication, customer management, contact organization, task tracking, and reporting functionalitie.",
+        image: crm,
+        tech: ["React", "Redux", "OAuth", "Firebase", "Tailwind CSS", "Axios"],
+        color: "#ef9fbc"
+    },
+    {
+        name: "Notes App",
+        link: "/",
+        code: "/",
+        desc: "Craft a straightforward note-taking application with features including user authentication, note creation, editing, deletion, and organization. Focus on simplicity and usability, ensuring seamless user experience for managing personal notes.",
+        image: notes,
+        tech: ["React ","ContextAPI ","Material UI" ,"Tailwind CSS "],
+        color: "#65c3c8"
+    },
 ]

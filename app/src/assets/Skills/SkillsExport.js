@@ -31,4 +31,17 @@ import github from '../Skills/tools/github.png'
 import git from '../Skills/tools/git.png'
 import figma from '../Skills/tools/figma.png'
 
-export {html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,spring,redis,mysql,postgre,nodejs,api,express,mongodb,s3,vercel,netlify,gcp,aws,vscode,figma,postman,github,git,jira}
+import spotify from '../images/spotify.png'
+import ecom from '../images/ecom.png'
+import notes from '../images/notes.png'
+import crm from '../images/crm.png'
+
+console.log(spotify);
+
+export {
+    spotify,crm,notes,ecom,
+    html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,
+    spring,redis,mysql,postgre,nodejs,api,express,mongodb,
+    s3,vercel,netlify,gcp,aws,
+    vscode,figma,postman,github,git,jira,
+}
