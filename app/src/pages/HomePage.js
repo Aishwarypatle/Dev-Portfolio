@@ -9,6 +9,7 @@ import Skills from './Skills';
 import About from './About';
 import Foooter from '../components/footer/Foooter';
 import InfoLayer from '../components/InfoLayer';
+import Experience from './Experience';
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
           <ProfileCard />
           <InfoLayer />
           <Skills />
+          <Experience />
           <Project />
           <About />
           <Foooter />

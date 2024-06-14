@@ -1,8 +1,9 @@
+'use client'
 import styled from '@emotion/styled'
 import { Box, Card } from '@mui/material'
 import React from 'react'
 
-const index = () => {
+const Experience = () => {
   return (
     <>
         <Card
@@ -23,4 +24,4 @@ const HeaderBox = styled(Box)(() => ({
   border : "4px solid black",
 }))
 
-export default index
+export default Experience
