@@ -1,14 +1,15 @@
+'use client'
 import { Box, Card, CardContent, Grid } from '@mui/material'
-import ProjectCard from '../../components/projects/ProjectCard'
 import React from 'react'
-import "../../app/globals.css";
-import { projectDetails } from '../../constant/constant';
+import "../app/globals.css"
+import { projectDetails } from '../constant/constant';
 import styled from '@emotion/styled';
+import ProjectCard from '../components/projects/ProjectCard';
 
-const index = () => {
+const Project = () => {
   return (
     <>
-      <Card className='shadow-none w-full h-screen grid place-items-center mt-10 overflow-auto' >
+      <Card className='shadow-none w-full grid place-items-center mt-10' >
         <HeaderBox>
             <p className='font-medium tracking-widest'>Projects</p>
         </HeaderBox>
@@ -37,4 +38,4 @@ const HeaderBox = styled(Box)(() => ({
   border : "4px solid rgb(106, 152, 240)",
 }))
 
-export default index
+export default Project

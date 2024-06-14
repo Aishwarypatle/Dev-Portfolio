@@ -70,14 +70,14 @@ export const frontendImages = [
         label : "React Native",
         src : native
     },
-    {
-        label : "CSS",
-        src : css
-    },
-    {
-        label : "HTMl",
-        src : html
-    },
+    // {
+    //     label : "CSS",
+    //     src : css
+    // },
+    // {
+    //     label : "HTMl",
+    //     src : html
+    // },
     {
         label : "Material UI",
         src : mui
@@ -194,7 +194,7 @@ export const projectDetails = [
         code: "/",
         desc: "Develop a fundamental customer relationship management (CRM) application featuring user authentication, customer management, contact organization, task tracking, and reporting functionalitie.",
         image: crm,
-        tech: ["React", "Redux", "OAuth", "Firebase", "Tailwind CSS", "Axios"],
+        tech: ["React", "Redux", "OAuth", "Firebase", "Axios"],
         color: "#ef9fbc"
     },
     {
@@ -203,7 +203,7 @@ export const projectDetails = [
         code: "/",
         desc: "Craft a straightforward note-taking application with features including user authentication, note creation, editing, deletion, and organization. Focus on simplicity and usability, ensuring seamless user experience for managing personal notes.",
         image: notes,
-        tech: ["React ","ContextAPI ","Material UI" ,"Tailwind CSS "],
-        color: "#65c3c8"
+        tech: ["React ","ContextAPI ","Material UI" ,"Tailwind"],
+        color: "#eeaf3a"
     },
 ]
