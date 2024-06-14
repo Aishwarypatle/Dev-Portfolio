@@ -1,4 +1,9 @@
 import {spotify,crm,notes,ecom,html,native,reactpng,javascript,typescript,redux,next,css,mui,jquery,spring,redis,mysql,postgre,nodejs,api,express,mongodb,s3,vercel,netlify,gcp,aws,vscode,figma,postman,github,git,jira} from "../assets/Skills/SkillsExport"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import XIcon from '@mui/icons-material/X';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const menuItems = [
     {
@@ -205,5 +210,33 @@ export const projectDetails = [
         image: notes,
         tech: ["React ","ContextAPI ","Material UI" ,"Tailwind"],
         color: "#eeaf3a"
+    },
+]
+
+export const SocialMenu = [
+    {
+        name:"Mail",
+        link: "aishwarypatle26@gmail.com",
+        icon: <MailOutlineIcon  fontSize='large' color='info' className='mx-2'/>
+    },
+    {
+        name:"X(Twitter)",
+        link: "https://x.com/AishwaryPatle",
+        icon: <XIcon fontSize='large' color='info' className='mx-2'/>
+    },
+    {
+        name:"Github",
+        link: "https://github.com/aishwarypatle",
+        icon: <GitHubIcon fontSize='large' color='info' className='mx-2'/>
+    },
+    {
+        name:"Linkedin",
+        link: "https://in.linkedin.com/in/aishwary-patle-1b13401a1",
+        icon: <LinkedInIcon fontSize='large' color='info' className='mx-2'/>
+    },
+    {
+        name:"Instagram",
+        link: "https://www.instagram.com/aishwary.dev/",
+        icon: <InstagramIcon fontSize='large' color='info' className='mx-2'/>
     },
 ]
