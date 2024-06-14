@@ -8,6 +8,7 @@ import Backend from '../components/Skills/Backend'
 import Tools from '../components/Skills/Tools'
 import "../app/globals.css";
 import styled from '@emotion/styled'
+import CustomHeader from '../common/CustomHeader'
 
 
 const Skills = () => {
@@ -21,9 +22,7 @@ const Skills = () => {
         sx={{boxShadow:"none"}}
         className='h-full flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
       >
-      <HeaderBox>
-        <p className='font-medium tracking-widest'>TECH STACK</p>
-      </HeaderBox>
+      <CustomHeader text={"TECH STACK"}/>
       <CardContent>
         <Grid container direction={"row"} justifyContent={"center"}>
           <Grid item>
@@ -57,12 +56,5 @@ const Skills = () => {
     </>
   )
 }
-
-
-const HeaderBox = styled(Box)(() => ({
-  padding : "10px",
-  paddingInline : "40px",
-  border : "4px solid black",
-}))
 
 export default Skills

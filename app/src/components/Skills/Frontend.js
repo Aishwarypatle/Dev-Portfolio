@@ -12,12 +12,13 @@ const Frontend = () => {
           {
             frontendImages?.map((item , index) => (
               <div className='flex flex-col justify-center items-center' key={index}>
-                <div className='rounded-full p-8 bg-slate-100'>
+                <div className='rounded-full p-4 md:p-8 bg-slate-100'>
                   <Image
                     alt={item?.label}
                     src={item?.src}
                     width={60}
                     height={60}
+                    decoding="async" data-nimg="1" 
                   />
                 </div>
                 <p className='mt-2 font-medium'>{item?.label}</p>

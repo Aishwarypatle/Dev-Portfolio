@@ -11,7 +11,7 @@ const Cloud = () => {
           {
             cloudImages?.map((item,index) => (
               <div className='flex flex-col justify-center items-center' key={index}>
-                <div className='rounded-full p-8 bg-slate-100'>
+                <div className='rounded-full p-4 md:p-8 bg-slate-100'>
                   <Image
                     alt={item?.label}
                     src={item?.src}

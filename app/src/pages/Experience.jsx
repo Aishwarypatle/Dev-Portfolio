@@ -1,6 +1,7 @@
 'use client'
 import styled from '@emotion/styled'
 import { Box, Card } from '@mui/material'
+import CustomHeader from '../common/CustomHeader'
 import React from 'react'
 
 const Experience = () => {
@@ -10,9 +11,7 @@ const Experience = () => {
           sx={{boxShadow:"none"}}
           className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
         >
-          <HeaderBox>
-            <p className='font-medium tracking-widest'>Experience</p>
-          </HeaderBox>
+          <CustomHeader text={"EXPERIENCE"} />
         </Card>
     </>
   )

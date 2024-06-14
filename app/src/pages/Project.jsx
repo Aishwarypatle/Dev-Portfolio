@@ -5,14 +5,13 @@ import "../app/globals.css"
 import { projectDetails } from '../constant/constant';
 import styled from '@emotion/styled';
 import ProjectCard from '../components/projects/ProjectCard';
+import CustomHeader from '../common/CustomHeader';
 
 const Project = () => {
   return (
     <>
       <Card className='shadow-none w-full grid place-items-center mt-10' >
-        <HeaderBox>
-            <p className='font-medium tracking-widest'>Projects</p>
-        </HeaderBox>
+        <CustomHeader text={"PROJECTS"} />
         <CardContent className='w-full grid place-items-center font-normal'>
             <p className='block text-xs '>Things I have built so far</p>
               <Box>
@@ -31,11 +30,4 @@ const Project = () => {
     </>
   )
 }
-
-const HeaderBox = styled(Box)(() => ({
-  padding : "10px",
-  paddingInline : "40px",
-  border : "4px solid rgb(106, 152, 240)",
-}))
-
 export default Project

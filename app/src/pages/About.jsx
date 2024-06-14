@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import user from '../assets/images/userr.png'
 import "../app/globals.css";
+import CustomHeader from '../common/CustomHeader'
 
 
 const About = () => {
@@ -13,9 +14,7 @@ const About = () => {
       sx={{boxShadow:"none"}}
       className='flex flex-col justify-center items-center mt-10 w-fit lg:w-full md:w-full'
     >
-      <HeaderBox>
-          <p className='font-medium tracking-widest'>About</p>
-       </HeaderBox>
+      <CustomHeader text={"ABOUT"} />
        <Grid container className='mt-20 ' direction={"row"} justifyContent={"center"} sx={{zIndex:10}}>
           <Grid item md={4} className='flex justify-center'>
             <ImageContainer >
@@ -61,12 +60,6 @@ const About = () => {
     </Card>
   )
 }
-
-const HeaderBox = styled(Box)(() => ({
-  padding : "10px",
-  paddingInline : "40px",
-  border : "4px solid rgb(106, 152, 240)",
-}))
 const ImageContainer = styled(Box)(() => ({
   border : "4px solid white",
   borderRadius : "50%",
