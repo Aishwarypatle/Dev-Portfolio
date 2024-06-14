@@ -33,6 +33,8 @@ body {
 } */
 .slow-spin{
   animation: spin 15s linear infinite;
+  top : 15px;
+  left :10px
 }
 .blue-box{
   background-color: #65c3c8;
