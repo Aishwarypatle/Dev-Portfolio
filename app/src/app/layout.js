@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationCard from "../components/bottomNavigation/NavigationCard";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="../../public/favicon.ico" />
+      </Head>
       <body className={inter.className}>{children}
         {/* <NavigationCard /> */}
       </body>
