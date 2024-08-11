@@ -57,7 +57,7 @@ const About = () => {
             </CardHolder>
           </Grid>
       </Grid>
-      <BackgroundShadow></BackgroundShadow>
+      <BackgroundShadow className='background-shadow'></BackgroundShadow>
     </Box>
   )
 }
@@ -88,9 +88,9 @@ const BackgroundShadow = styled(Box)(({theme}) => ({
   transform: "skewY(-2deg)",
   // zIndex: -1,
   pointerEvents: "none",
-  bottom : "1150px",
-  [theme.breakpoints.up('sm')]: {
-    bottom: "730px",
-  }
+  // bottom : "1150px",
+  // [theme.breakpoints.up('sm')]: {
+  //   bottom: "730px",
+  // }
 }))
 export default About

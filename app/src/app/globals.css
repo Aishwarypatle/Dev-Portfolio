@@ -45,3 +45,17 @@ body {
 .red-box{
   background-color: #ef9fbc;
 }
+.background-shadow{
+
+}
+
+.background-shadow {
+  bottom: 1150px;
+}
+
+/* Media query for 'sm' and larger screens */
+@media (min-width: 600px) { /* Adjust this value to match the 'sm' breakpoint in your theme */
+  .background-shadow {
+    bottom: 730px;
+  }
+}
