@@ -1,6 +1,6 @@
 'use client'
 import styled from '@emotion/styled'
-import { Box, Card, Grid } from '@mui/material'
+import { Box, Card, Grid, useTheme } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import user from '../assets/images/userr.png'
@@ -9,6 +9,7 @@ import CustomHeader from '../common/CustomHeader'
 
 
 const About = () => {
+  const theme =  useTheme();
   return (
     <Box
       sx={{boxShadow:"none"}}
@@ -26,7 +27,7 @@ const About = () => {
               />
             </ImageContainer>
           </Grid>
-          <Grid item md={8} sm={12}>
+          <Grid item md={8} sm={12} sx={{padding:2}}>
             <article className='font-normal text-lime-50 font-mono'>
               Hi, I'm Aishwary Patle, a self-taught passionate Software Engineer from India, currently working at A'alda vet India as a SDE-1. I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces. I also love doing open source development, It gives me a wonderful feeling of achievement and joy which I cannot explain in words. 
               <br /><br />I have a deep understanding of Data structures and algorithms as well as SOLID principles. I am learning System Design as well as how the applications can be made scalable
@@ -87,6 +88,9 @@ const BackgroundShadow = styled(Box)(({theme}) => ({
   transform: "skewY(-2deg)",
   // zIndex: -1,
   pointerEvents: "none",
-  bottom :"600px",
+  bottom : "1150px",
+  [theme.breakpoints.up('sm')]: {
+    bottom: "730px",
+  }
 }))
 export default About
