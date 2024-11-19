@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import { Box, Card, Grid, useTheme } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
-import user from '../assets/images/userr.png'
+import user from '../assets/images/aishhh (3).png'
 import "../app/globals.css";
 import CustomHeader from '../common/CustomHeader'
 
