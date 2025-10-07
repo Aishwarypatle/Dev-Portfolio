@@ -177,8 +177,8 @@ export const toolsImage = [
 export const projectDetails = [
     {
         name: "Spotify Clone",
-        link: "/",
-        code: "/",
+        link: "https://harmony-music-hub.vercel.app/home",
+        code: "https://github.com/Aishwarypatle/Spotify_Clone",
         desc: "Create a music streaming app akin to Spotify, featuring user authentication, music browsing, playback controls, playlist management, and user profiles. Aim for a functional prototype to showcase core functionalities.",
         image: spotify,
         tech:[ "React Native" ,"Redux" ,"Tailwind CSS", "Spotify API"],
