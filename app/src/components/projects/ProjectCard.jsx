@@ -39,8 +39,8 @@ const ProjectCard = ({item}) => {
                             }
                         </div>
                         <div className='flex justify-between w-full'>
-                            <a href={item?.link} className='underline text-xs font-light '><LinkIcon fontSize='small' /> Live Preview</a>
-                            <a href={item?.code} className='underline text-xs font-light'><GitHubIcon fontSize='small'/> Source Code</a>
+                            <a href={item?.link} className='underline text-xs font-light ' target='blank'><LinkIcon fontSize='small' /> Live Preview</a>
+                            <a href={item?.code} className='underline text-xs font-light' target='blank'><GitHubIcon fontSize='small'/> Source Code</a>
                         </div>
                     </Grid>
                 </Box>
